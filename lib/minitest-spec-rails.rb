@@ -1,4 +1,4 @@
-module MiniTestSpecRails
+module MinitestSpecRails
 end
 
 require 'rails'

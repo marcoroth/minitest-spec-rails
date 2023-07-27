@@ -1,4 +1,4 @@
-module MiniTestSpecRails
+module MinitestSpecRails
   module Init
     module ActionControllerBehavior
       extend ActiveSupport::Concern
@@ -19,4 +19,4 @@ module MiniTestSpecRails
   end
 end
 
-ActionController::TestCase.send :include, MiniTestSpecRails::Init::ActionControllerBehavior
+ActionController::TestCase.send :include, MinitestSpecRails::Init::ActionControllerBehavior

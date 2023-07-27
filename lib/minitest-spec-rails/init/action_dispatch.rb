@@ -1,4 +1,4 @@
-module MiniTestSpecRails
+module MinitestSpecRails
   module Init
     module ActionDispatchBehavior
       extend ActiveSupport::Concern
@@ -11,4 +11,4 @@ module MiniTestSpecRails
   end
 end
 
-ActionDispatch::IntegrationTest.send :include, MiniTestSpecRails::Init::ActionDispatchBehavior
+ActionDispatch::IntegrationTest.send :include, MinitestSpecRails::Init::ActionDispatchBehavior

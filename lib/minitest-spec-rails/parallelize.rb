@@ -2,7 +2,7 @@
 # HACK: stolen and altered from https://github.com/blowmage/minitest-rails/pull/218/files
 # Which was referenced in https://github.com/metaskills/minitest-spec-rails/issues/94
 
-module MiniTestSpecRails
+module MinitestSpecRails
   ##
   # This module is a placeholder for all the Test classes created using the
   # spec DSL. Normally all classes are created but not assigned to a constant.
@@ -23,8 +23,8 @@ module Kernel #:nodoc:
       source_path = source_path.split(/\W/).reject(&:empty?).join("_".freeze)
       cls_const += "__#{source_path}__#{line_num}"
     end
-    cls_const += "_1" while MiniTestSpecRails::SpecTests.const_defined? cls_const
-    MiniTestSpecRails::SpecTests.const_set cls_const, cls
+    cls_const += "_1" while MinitestSpecRails::SpecTests.const_defined? cls_const
+    MinitestSpecRails::SpecTests.const_set cls_const, cls
     cls
   end
 end

@@ -1,4 +1,4 @@
-module MiniTestSpecRails
+module MinitestSpecRails
   module Init
     module MiniShouldaBehavior
       extend ActiveSupport::Concern
@@ -20,4 +20,4 @@ module MiniTestSpecRails
   end
 end
 
-ActiveSupport::TestCase.send :include, MiniTestSpecRails::Init::MiniShouldaBehavior
+ActiveSupport::TestCase.send :include, MinitestSpecRails::Init::MiniShouldaBehavior

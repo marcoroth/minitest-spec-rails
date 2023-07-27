@@ -1,4 +1,4 @@
-module MiniTestSpecRails
+module MinitestSpecRails
   module Init
     module ActiveJobBehavior
       extend ActiveSupport::Concern
@@ -21,4 +21,4 @@ module MiniTestSpecRails
   end
 end
 
-ActiveJob::TestCase.send :include, MiniTestSpecRails::Init::ActiveJobBehavior
+ActiveJob::TestCase.send :include, MinitestSpecRails::Init::ActiveJobBehavior

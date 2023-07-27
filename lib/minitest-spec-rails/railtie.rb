@@ -1,4 +1,4 @@
-module MiniTestSpecRails
+module MinitestSpecRails
   class Railtie < ::Rails::Railtie
     config.minitest_spec_rails = ActiveSupport::OrderedOptions.new
     config.minitest_spec_rails.mini_shoulda = false

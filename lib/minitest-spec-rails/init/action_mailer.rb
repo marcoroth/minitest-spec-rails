@@ -1,4 +1,4 @@
-module MiniTestSpecRails
+module MinitestSpecRails
   module Init
     module ActionMailerBehavior
       extend ActiveSupport::Concern
@@ -19,4 +19,4 @@ module MiniTestSpecRails
   end
 end
 
-ActionMailer::TestCase.send :include, MiniTestSpecRails::Init::ActionMailerBehavior
+ActionMailer::TestCase.send :include, MinitestSpecRails::Init::ActionMailerBehavior

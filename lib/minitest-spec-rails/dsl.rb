@@ -1,4 +1,4 @@
-module MiniTestSpecRails
+module MinitestSpecRails
   module DSL
     def self.included(klass)
       klass.extend ClassMethods

@@ -1,4 +1,4 @@
-module MiniTestSpecRails
+module MinitestSpecRails
   module SharedTestCaseBehavior
     extend ActiveSupport::Concern
 

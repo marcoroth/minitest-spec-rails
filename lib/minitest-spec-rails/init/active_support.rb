@@ -1,11 +1,11 @@
-module MiniTestSpecRails
+module MinitestSpecRails
   module Init
     module ActiveSupportBehavior
       extend ActiveSupport::Concern
 
       included do
-        extend MiniTest::Spec::DSL
-        include MiniTestSpecRails::DSL
+        extend Minitest::Spec::DSL
+        include MinitestSpecRails::DSL
         include ActiveSupport::Testing::ConstantLookup
         extend Descriptions
         register_spec_type(self) { |desc| desc.is_a?(Class) }
@@ -29,4 +29,4 @@ module MiniTestSpecRails
   end
 end
 
-ActiveSupport::TestCase.send :include, MiniTestSpecRails::Init::ActiveSupportBehavior
+ActiveSupport::TestCase.send :include, MinitestSpecRails::Init::ActiveSupportBehavior

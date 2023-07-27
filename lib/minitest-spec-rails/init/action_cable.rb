@@ -4,7 +4,7 @@ end
 
 require 'action_cable/channel/test_case'
 
-module MiniTestSpecRails
+module MinitestSpecRails
   module Init
     module ActionCableBehavior
       extend ActiveSupport::Concern
@@ -25,4 +25,4 @@ module MiniTestSpecRails
   end
 end
 
-ActionCable::Channel::TestCase.include MiniTestSpecRails::Init::ActionCableBehavior
+ActionCable::Channel::TestCase.include MinitestSpecRails::Init::ActionCableBehavior
